@@ -99,7 +99,7 @@ const Application = () => {
           ))}
         </div>
       </div>
-      <div className="md:hidden left-0 absolute w-full text-[12px] font-bold pb-4">
+      <div className="md:hidden left-0 pt-10 absolute w-full text-[12px] font-bold pb-4">
         <p className="flex justify-center">&copy; 2022 hub, inc.</p>
         <Link className="flex justify-center" to="/">
           privacy

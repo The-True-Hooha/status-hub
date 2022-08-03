@@ -63,7 +63,7 @@ export default function Navbar() {
                 </Link>
               </div>
             </div>
-            <div className="bottom-0 left-0 absolute w-full text-[12px] font-bold pb-4">
+            <div className="bottom-0 hidden left-0 absolute w-full text-[12px] font-bold pb-4">
               <p className="flex justify-center">&copy; 2022 hub, inc.</p>
               <Link className="flex justify-center" to="/">
                 privacy
