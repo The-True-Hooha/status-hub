@@ -32,9 +32,9 @@ export default function Navbar() {
               <p className="text-[30px] font-bold font-mono text-blue-900">
                 hub
               </p>
-              <AiOutlineMenu/>
+              <AiOutlineMenu className="md:hidden"></AiOutlineMenu>
             </div>
-            <div className="md:grid w-full grid-cols-1 pt-4 text-[15px]">
+            <div className="md:grid w-full hidden grid-cols-1 pt-4 text-[15px]">
               <div className="flex h-full items-center">
                 <MdHome size={20} className="ml-4 text-gray-700" />
                 <Link className="ml-4" to="/">
