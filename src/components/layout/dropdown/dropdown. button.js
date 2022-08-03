@@ -9,7 +9,7 @@ function classNames(...classes) {
 
 export default function SortButton() {
   return (
-    <Menu as="div" className="relative inline-block mr-[30px] text-left">
+    <Menu as="div" className="relative inline-block md:mr-[30px] mr-[50px] text-left">
       <Menu.Button
         className="inline-flex justify-center w-full rounded-md border border'
          border-[#1AA952] shadow-sm px-4 py-2 bg-white text-sm font-medium text-[#1AA952]
@@ -27,7 +27,7 @@ export default function SortButton() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top-left absolute left-0 mt-2 w-40 z-30 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none">
+        <Menu.Items className="origin-top-left absolute left-0 mt-2 md:w-40 z-30 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none">
           <div className="">
             <Menu.Item>
               {({ active }) => (

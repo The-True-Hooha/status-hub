@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { MdHome, MdNotifications, MdAddCircleOutline } from "react-icons/md";
 import { CgMenuGridR } from "react-icons/cg";
 
 export default function Navbar() {
+
+  const [navbar, setNavbar] = useState(false)
+
+  const handleSideNav = () => {
+    setNavbar(!navbar);
+  }
   return (
     <header>
       <div className="fixed w-full h-[60px] bg-white border border-b">
@@ -19,14 +26,15 @@ export default function Navbar() {
           </div>
         </div>
         {/* handles the side nav bar*/}
-        <div className="left-0 fixed top-0 w-[210px] h-screen md:border md:border-r">
-          <div>
-            <div className="flex justify-start px-10 mt-1.5">
+        <div className="left-0 fixed top-0 md:w-[210px] w-full h-screen md:border md:border-r">
+          <div className="">
+            <div className="flex justify-between w-full items-center px-10 mt-1.5">
               <p className="text-[30px] font-bold font-mono text-blue-900">
                 hub
               </p>
+              <AiOutlineMenu/>
             </div>
-            <div className="md:grid w-full hidden grid-cols-1 pt-4 text-[15px]">
+            <div className="md:grid w-full grid-cols-1 pt-4 text-[15px]">
               <div className="flex h-full items-center">
                 <MdHome size={20} className="ml-4 text-gray-700" />
                 <Link className="ml-4" to="/">
