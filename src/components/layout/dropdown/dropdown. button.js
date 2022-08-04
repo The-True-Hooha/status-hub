@@ -7,6 +7,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+// used headless ui to handle the dropdown button and not with core js
+
 export default function SortButton() {
   return (
     <Menu as="div" className="relative inline-block md:mr-[30px] mr-[50px] text-left">
@@ -18,6 +20,8 @@ export default function SortButton() {
         Sort
         <AiOutlineCaretDown className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
       </Menu.Button>
+      
+      {/* css transition dropdown  effect */}
       <Transition
         as={Fragment}
         enter="transition ease-out duration-100"
@@ -27,6 +31,7 @@ export default function SortButton() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
+        {/* sets the menu item in the dropdown */}
         <Menu.Items className="origin-top-left absolute left-0 mt-2 md:w-40 z-30 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none">
           <div className="">
             <Menu.Item>

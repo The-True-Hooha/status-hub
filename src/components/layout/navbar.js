@@ -36,7 +36,7 @@ export default function Navbar() {
           {/* starts here */}
           <div
             className={
-              navbar ? "md:grid grid-cols-1 bg-white pt-4 text-[15px]" : "hidden mt-8 md:md:grid grid-cols-1"
+              navbar ? "md:grid grid-cols-1 bg-white/60 pt-4 text-[15px]" : "hidden mt-8 md:md:grid grid-cols-1"
             }
           >
             
