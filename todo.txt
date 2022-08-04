@@ -95,6 +95,15 @@ change fonts
 
 
 
+className={
+                  navbar
+                    ? "flex h-full items-center"
+                    : "h-full items-center hidden"
+                }
+
+
+
+
 //starts here
 
 <nav className="flex justify-between items-center w-full h-full px-2 2xl:px-16 ">
