@@ -81,19 +81,19 @@ const apps = [
 
 const Application = () => {
   return (
-    <div className="md:px-[200px] md:py-[100px] py-[100px] 2xl:max-w-[2800px]">
+    <div className="lg:px-[200px] lg:py-[100px] py-[100px]">
       <div className="flex text-[15px] md:ml-[220px] ml-[40px] justify-between">
         <h2 className="font-bold">My Apps</h2>
         <SortButton className=""></SortButton>
       </div>
-      <div className="md:ml-[180px]">
+      <div className="md:ml-[140px]">
         <h2 className="font-bold text-[13px] md:ml-[85px] ml-[40px] mt-6 flex">
           <span>
             <IoIosArrowDropup className="mr-1" size={16} />
           </span>
           Flagship Pioneering
         </h2>
-        <div className="flex flex-wrap md:ml-[90px] md:justify-start justify-center md:w-[1000px] mt-6 gap-[10px]">
+        <div className="flex flex-wrap md:ml-[90px] lg:justify-start justify-center lg:w-[1000px] mt-6 gap-[10px]">
           {apps.map((v, index) => (
             <ApplicationCard {...v} key={index} name={v.name} />
           ))}

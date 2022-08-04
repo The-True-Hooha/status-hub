@@ -13,12 +13,12 @@ export default function SortButton() {
   return (
     <Menu as="div" className="relative inline-block md:mr-[80px] mr-[50px] text-left">
       <Menu.Button
-        className="inline-flex justify-center w-full rounded-md border border'
+        className="md:inline-flex hidden justify-center w-full rounded-md border border'
          border-[#1AA952] shadow-sm px-4 py-2 bg-white text-sm font-medium text-[#1AA952]
           hover:bg-gray-50 focus:outline-none "
       >
         Sort
-        <AiOutlineCaretDown className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+        <AiOutlineCaretDown className="-mr-1 ml-2 h-5 w-5" />
       </Menu.Button>
 
       {/* css transition dropdown  effect */}
