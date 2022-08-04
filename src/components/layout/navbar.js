@@ -42,43 +42,43 @@ export default function Navbar() {
             
             <div className="pt-2 flex h-full items-center">
               <MdHome size={20} className="text-gray-700 ml-4" />
-              <Link className="ml-4" to="/">
+              <Link onClick={() => setNavbar(false)} className="ml-4" to="/">
                 {" "}
                 My Apps
               </Link>
             </div>
             <div className="pt-2">
-              <Link className="ml-[54px]" to="/">
+              <Link onClick={() => setNavbar(false)} className="ml-[54px]" to="/">
                 Flagship Pioneering
               </Link>
             </div>
             <div className="pt-2">
-              <Link className="ml-[54px]" to="/">
+              <Link onClick={() => setNavbar(false)} className="ml-[54px]" to="/">
                 Subscriptions
               </Link>
             </div>
             <div className="pt-2 flex h-full items-center">
-              <Link className="ml-[54px]" to="/">
+              <Link onClick={() => setNavbar(false)} className="ml-[54px]" to="/">
                 Add section
               </Link>
               <MdAddCircleOutline className="ml-1" />
             </div>
             <div className="pt-2 flex h-full items-center">
               <MdNotifications size={20} className="text-gray-700 ml-4" />
-              <Link className="ml-4" to="/">
+              <Link onClick={() => setNavbar(false)} className="ml-4" to="/">
                 Notifications
               </Link>
             </div>
             <div className="pt-2 flex items-center h-full">
               <CgMenuGridR size={20} className="ml-4" />
-              <Link className="ml-4" to="/">
+              <Link onClick={() => setNavbar(false)} className="ml-4" to="/">
                 Add apps
               </Link>
             </div>
           </div>
           <div className="bottom-0 hidden left-0 absolute w-full text-[12px] font-bold pb-4">
             <p className="flex justify-center">&copy; 2022 hub, inc.</p>
-            <Link className="flex justify-center" to="/">
+            <Link onClick={() => setNavbar(false)} className="flex justify-center" to="/">
               privacy
             </Link>
           </div>
