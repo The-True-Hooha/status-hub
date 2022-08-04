@@ -81,7 +81,7 @@ const apps = [
 
 const Application = () => {
   return (
-    <div className="md:px-[200px] md:py-[100px] py-[100px] 2xl:max-w-[2800px]">
+    <div className="md:px-[200px] md:py-[100px] py-[400px] 2xl:max-w-[2800px]">
       <div className="flex text-[15px] md:ml-[100px] ml-[40px] justify-between">
         <h2 className="font-bold">My Apps</h2>
         <SortButton className=""></SortButton>
